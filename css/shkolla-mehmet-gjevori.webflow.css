@@ -88,6 +88,8 @@
 }
 
 .brand {
+  object-fit: cover;
+  width: auto;
   height: 50px;
 }
 
@@ -697,9 +699,9 @@
 }
 
 .footer-brnad {
-  height: 26px;
+  height: 50px;
   font-weight: 500;
-  display: none;
+  display: block;
 }
 
 .img-full {
@@ -776,10 +778,11 @@
 }
 
 .left-block-footer {
-  flex-flow: column;
-  justify-content: flex-start;
-  align-items: flex-end;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  margin-top: 40px;
   display: flex;
 }
 
@@ -790,8 +793,8 @@
 }
 
 .footer-copyright {
-  width: 100%;
-  padding-top: 40px;
+  width: auto;
+  padding-top: 0;
 }
 
 .tablet-menu {
@@ -1230,6 +1233,11 @@
   left: 15px;
 }
 
+.link-2 {
+  color: var(--primary);
+  text-decoration: none;
+}
+
 @media screen and (max-width: 991px) {
   .navbar {
     padding-top: 15px;
@@ -1268,7 +1276,7 @@
 
   .brand {
     object-fit: contain;
-    width: 130px;
+    width: auto;
   }
 
   .nav-link {
@@ -1486,7 +1494,7 @@
   }
 
   .footer-bootom-wrapper {
-    flex-flow: wrap;
+    flex-flow: row;
     justify-content: flex-end;
     align-items: center;
   }
@@ -1543,7 +1551,10 @@
   }
 
   .left-block-footer {
-    justify-content: flex-start;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-flow: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 40px;
@@ -1686,6 +1697,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .brand {
+    padding-left: 0;
+  }
+
   .home-banner-section {
     padding-top: 120px;
     padding-bottom: 60px;
@@ -1915,6 +1930,8 @@
   }
 
   .left-block-footer {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
     margin-top: 0;
   }
 
@@ -2069,7 +2086,7 @@
   }
 
   .brand {
-    width: 100px;
+    width: auto;
     height: 40px;
   }
 
